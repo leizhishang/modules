@@ -1,0 +1,34 @@
+{
+    "name": "leizhishang/modules",
+    "description": "Laravel 5.x Modules",
+    "keywords": ["modules", "laravel", "leizhishang"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ceshi",
+            "email": "969111802@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "^5.5,<5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leizhishang\\Modules\\": "src/"
+        }
+    },
+    "suggest": {
+        "wikimedia/composer-merge-plugin": "Allows the ability to create and merge composer.json files for your individual modules for module-specific dependency management."
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Leizhishang\\Modules\\ModulesServiceProvider"
+            ],
+            "aliases": {
+                "Module": "Leizhishang\\Modules\\Facades\\Module"
+            }
+        }
+    }
+}
